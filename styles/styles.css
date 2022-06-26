@@ -1,3 +1,8 @@
+/* notas
+para deskopt 
+nav: poner margin top y border radius en todos los bordes */
+
+
 body{
 margin: 0%;
 }
@@ -5,9 +10,9 @@ margin: 0%;
 .nav{
     padding-top: 25px;
     padding-bottom: 20px;
-    margin-top: 10px;
-    border-radius: 10px 10px 10px 10px;
-    background-image: linear-gradient(135deg, #5E17EB,#5E17EB,  #469ce2,#17afeb, #5E17EB,#5E17EB);
+    /* margin-top: 10px; */
+    border-radius: 0px 0px 10px 10px;
+    background-image: linear-gradient(135deg, #523094,#5E17EB,  #469ce2,#17afeb, #5E17EB,#5E17EB);
     background-size: 500%;
     animation: fanimado 10s infinite;
     position: relative;
@@ -39,6 +44,85 @@ margin: 0%;
     color: white!important;
     font-size: 17px;
 }
-button{
+.nav > button{
     text-decoration: none!important;
+}
+
+
+/* cards cv */
+.card{
+  margin-top: 250px;
+  position: relative;
+  width: 300px!important;
+  height: 190px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+  transition: 0.5s;
+}
+.card:hover{
+  width: 350px;
+  height:450px;
+}
+.imgBx{
+position: absolute;
+left: 50%;
+top: -30%;
+transform: translateX(-50%);
+width: 100px;
+height: 100px;
+background: #fff;
+border-radius: 20px;
+box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+overflow: hidden;
+transition: 0.5s;
+}
+.card:hover {
+height: 250px;
+}
+.imgBX img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.details{
+  padding: 40px;
+text-align: center;
+width: 100%;
+transition: 0.5s;
+}
+.details h2{
+  margin-top: 30px;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2em;
+}
+.details h2 span{
+  font-size: 0.75em;
+  font-weight: 500;
+  opacity: 0.5;
+}
+.actionBtn{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.actionBtn button{
+  pad: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-weight: 500;
+  background: #6b4fe7;
+  color: #fff;
+}
+.actionBtn button:nth-child(2){
+  border: 1px solid #999;
+  color: #999;
+  background: #fff;
 }
